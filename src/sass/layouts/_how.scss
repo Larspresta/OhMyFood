@@ -1,0 +1,53 @@
+@use '../util/mixins' as m;
+@use '../util/variables' as v;
+@use '../base/colors' as c;
+
+.how-container {
+    margin:1em;
+    
+    &__headline {
+    font-size: 2em;
+    font-weight: var(--font-weight-bold);
+    }
+}
+
+.how-container-cards {
+    @include m.flex-column;
+    justify-content: space-around;
+    font-size: 1em;
+    height: 300px;
+
+    &__card  {
+        display: flex;
+        justify-content:flex-start;
+        width: 300px;
+        gap: 1em;
+        background-color: var(--bg-color-light);
+        border-radius: 20px;
+        padding: 25px;
+        position: relative;
+        @include m.box-shadow-btn(var(--box-shadow));   
+    }
+}
+
+.how-card-number {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: -5%;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+}
+
+.how-card-icon {
+    margin-left: 20px;
+    color: var(--icon-dark);
+}
+
+.how-container-cards__card:hover {
+    background: lighten(#9356DC, 35%);
+}
