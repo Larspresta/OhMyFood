@@ -1,0 +1,25 @@
+@use '../util/mixins' as m;
+
+.explore-container {
+    background-color: var(--bg-color-light);
+    @include m.flex-column;
+    justify-content: space-around;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+        &__item {
+            padding: 1rem;
+        }
+
+            &__item--headline {
+                font-weight: var(--font-weight-bold);
+                font-size: 1.8rem;
+            }
+            
+            &__item--text {
+                font-weight: var(--font-weight-light);
+                font-size: 1.6rem;
+                text-align: center;
+            }
+}

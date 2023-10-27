@@ -1,0 +1,13 @@
+@use '../util/mixins' as m;
+
+.main-btn {
+    background-image: linear-gradient(to top left, var(--primary-color), var(--secondary-color));
+    margin: 10px;
+    padding: 10px 40px;
+    color: #fff;
+    box-shadow: 0 2px 10px ;
+    border-radius: 35px;
+    @include m.box-shadow-btn(var(--box-shadow));
+}
+
+         

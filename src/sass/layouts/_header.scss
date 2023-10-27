@@ -1,0 +1,11 @@
+@use '../util/mixins' as m;
+
+.primary-header {
+    height: 4em;
+    @include m.box-shadow(rgb(46, 46, 46));
+    
+    &__logo {
+        margin: 1em auto;
+        width: 50%;
+    }
+}
