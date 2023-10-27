@@ -13,8 +13,7 @@
         }
 
             &__item--headline {
-                font-weight: var(--font-weight-bold);
-                font-size: 1.8rem;
+                @include m.section-headline
             }
             
             &__item--text {

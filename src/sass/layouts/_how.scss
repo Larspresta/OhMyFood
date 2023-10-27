@@ -6,8 +6,7 @@
     margin:1em;
     
     &__headline {
-    font-size: 2em;
-    font-weight: var(--font-weight-bold);
+        @include m.section-headline
     }
 }
 
@@ -26,7 +25,7 @@
         border-radius: 20px;
         padding: 25px;
         position: relative;
-        @include m.box-shadow-btn(var(--box-shadow));   
+        @include m.box-shadow-btn(var(--box-shadow-light));   
     }
 }
 

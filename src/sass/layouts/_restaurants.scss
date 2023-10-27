@@ -1,0 +1,16 @@
+@use '../util/mixins' as m;
+
+.restaurants {
+    padding:4em 1em; 
+    background-color: var(--bg-color-light);
+}
+
+.restaurants-headline {
+    padding-bottom: 1em;
+    @include m.section-headline;
+}
+
+.restaurants-container {
+    @include m.flex-column;
+    gap: 2em;
+}

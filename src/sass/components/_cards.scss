@@ -1,4 +1,44 @@
-.restaurants-container__card {
+@use '../util/mixins' as m;
+
+.restaurants-card {
     height: 200px;
-    
+    background-color: white;
+    border-radius: 20px;
+    @include m.box-shadow-btn(var(--box-shadow-light)); 
+
+    &__image {
+        width: 300px;
+        height: 65%;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+        }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 12px 12px;
+
+    }
+    &--name {
+        font-weight: var(--font-weight-bold);
+
+    }
+    &--location {
+        font-weight: var(--font-weight-light);
+
+    }
+    &__icon {
+        font-size: 1.7em;
+    }
+}
+
+.fa-hover-show{
+    color: var(--primary-color);
+}
+.restaurants-card__icon > .fa + .fa, .restaurants-card__icon:hover > .fa {
+    display: none;
+}
+
+.restaurants-card__icon:hover > .fa + .fa {
+    display: inherit;
 }

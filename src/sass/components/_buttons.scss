@@ -1,4 +1,5 @@
 @use '../util/mixins' as m;
+@use '../util/variables' as v;
 
 .main-btn {
     background-image: linear-gradient(to top left, var(--primary-color), var(--secondary-color));
@@ -7,7 +8,12 @@
     color: #fff;
     box-shadow: 0 2px 10px ;
     border-radius: 35px;
-    @include m.box-shadow-btn(var(--box-shadow));
+    @include m.box-shadow-btn(var(--box-shadow-light));
+
+        &:hover {
+            @include m.box-shadow-btn(rgb(177, 177, 177));
+            filter: brightness(110%);
+        }
 }
 
          

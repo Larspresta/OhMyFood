@@ -1,0 +1,17 @@
+footer {
+    height: 240px;
+    background-color: var(--bg-footer-color);
+}
+.footer-container {
+    padding: 2em 2em;
+        &__items {
+            line-height: 2em;
+        }
+
+        li:nth-child(1){
+        margin-bottom: 1em;
+        }
+}
+.fa-utensils, .fa-handshake-angle{
+    width: 25px;
+}

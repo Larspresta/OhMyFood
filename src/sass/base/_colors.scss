@@ -8,7 +8,8 @@
     --bg-color-light: #f7f7f7;
     --bg-footer-color: #3b3b3b;
 
-    --box-shadow: hsl(0, 0%, 17%);
-
+    --box-shadow-dark: hsl(0, 0%, 17%);
+    --box-shadow-light: hsl(0, 0%, 59%);
     --icon-dark: rgb(85, 85, 85);
+    $primary-color: --primary-color;
 }

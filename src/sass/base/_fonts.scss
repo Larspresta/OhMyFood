@@ -5,10 +5,12 @@ body {
 h1, h2, h3, h4 {
     font-family: 'Shrikhand', serif;
     margin-top: 0;
+    font-weight: var(--font-weight-light);
 }
 
 a, a:visited, a:active {
     text-decoration: none;
+    color: white;
 }
 
 p {
