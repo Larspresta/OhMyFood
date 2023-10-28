@@ -1,0 +1,15 @@
+.rst-page-main-image {
+    margin: auto;
+}
+
+.menu-page {
+    background-color: var(--bg-color-light);
+    border-radius: 25px;
+    padding-top: 20px;
+    top: -20px;
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    z-index: 9;    
+}
+
