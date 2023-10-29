@@ -17,6 +17,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 12px 12px;
+        color: black;
 
     }
     &--name {
@@ -85,11 +86,12 @@
 
 .menu-card-name {
     &__item{
-    font-size: 1.2em;
-    font-weight: var(--font-weight-medium);
-}
+        font-size: 1.2em;
+        font-weight: var(--font-weight-medium);
+    }
     &__info {
         font-weight: var(--font-weight-light);
+        text-overflow: ellipsis;
     }
 }
 

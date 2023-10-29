@@ -5,6 +5,14 @@
     margin: auto;
 }
 
+.home-arrow .fa-arrow-left {
+    position: absolute;
+    top: 20px;
+    margin-left: 20px;
+    font-size: 1.8em;
+    color: black;
+}
+
 .menu-page {
     background-color: var(--bg-color-light);
     border-radius: 25px;

@@ -82,6 +82,7 @@ p {
   justify-content: space-between;
   align-items: center;
   margin: 12px 12px;
+  color: black;
 }
 .restaurants-card--name {
   font-weight: var(--font-weight-bold);
@@ -149,6 +150,7 @@ p {
 }
 .menu-card-name__info {
   font-weight: var(--font-weight-light);
+  text-overflow: ellipsis;
 }
 
 .menu-card:hover .menu-card__rightside {
@@ -397,6 +399,14 @@ footer {
 
 .rst-page-main-image {
   margin: auto;
+}
+
+.home-arrow .fa-arrow-left {
+  position: absolute;
+  top: 20px;
+  margin-left: 20px;
+  font-size: 1.8em;
+  color: black;
 }
 
 .menu-page {
