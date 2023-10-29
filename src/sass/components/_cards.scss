@@ -44,10 +44,8 @@
 }
 
 .menu-card {
+    overflow: hidden;
     background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
     margin: 1em 1em;
     padding: 1em 1em;
     border-radius: 20px;
