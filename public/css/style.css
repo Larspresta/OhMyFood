@@ -106,23 +106,84 @@ p {
 }
 
 .menu-card {
+  overflow: hidden;
   background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  margin: 1em 1em;
+  height: 5em;
+  border-radius: 20px;
+  animation: cards 1s both;
+  transform-origin: bottom;
+  box-shadow: 0px 5px 8px var(--box-shadow-light);
+}
+.menu-card__info {
+  padding: 1em 0 1em 1em;
   display: flex;
   justify-content: space-between;
   align-items: end;
-  margin: 1em 1em;
-  padding: 1em 1em;
-  border-radius: 20px;
-  box-shadow: 0px 5px 8px var(--box-shadow-light);
+  flex-grow: 2;
+}
+.menu-card--1 {
+  animation-delay: 150ms;
+}
+.menu-card--2 {
+  animation-delay: 300ms;
+}
+.menu-card--3 {
+  animation-delay: 450ms;
 }
 
-.menu-card--item {
+@keyframes cards {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu-card-name__item {
   font-size: 1.2em;
   font-weight: var(--font-weight-medium);
 }
-
-.menu-card--info {
+.menu-card-name__info {
   font-weight: var(--font-weight-light);
+}
+
+.menu-card:hover .menu-card__rightside {
+  transform: translateX(0);
+}
+
+.menu-card:hover .menu-card-price {
+  transform: translateX(-10px);
+}
+
+.menu-card:hover .menu-card__rightside--icon {
+  transform: rotate(0deg);
+}
+
+.menu-card__rightside {
+  overflow: hidden;
+  width: 70px;
+  height: 100%;
+  background-color: aquamarine;
+  transform: translateX(110px);
+  transition: transform 500ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-card__rightside--icon {
+  color: white;
+  font-size: 1.7em;
+  transform: rotate(-180deg);
+  transition: transform 1s ease-in-out;
+}
+
+.menu-card-price {
+  transform: translateX(40px);
+  transition: transform 500ms ease-in-out;
 }
 
 :root {
@@ -287,8 +348,17 @@ footer {
   max-width: 1000px;
   position: relative;
   z-index: 9;
+  animation: change-color-anim 0.7s linear;
 }
 
+@keyframes change-color-anim {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: var(--bg-color-light);
+  }
+}
 .menu__head {
   display: flex;
   justify-content: space-between;

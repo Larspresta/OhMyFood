@@ -17,8 +17,17 @@
   max-width: 1000px;
   position: relative;
   z-index: 9;
+  animation: change-color-anim 0.7s linear;
 }
 
+@keyframes change-color-anim {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: var(--bg-color-light);
+  }
+}
 .menu__head {
   display: flex;
   justify-content: space-between;
