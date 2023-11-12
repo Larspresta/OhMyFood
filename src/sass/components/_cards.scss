@@ -31,6 +31,10 @@
     &__icon {
         font-size: 1.7em;
     }
+
+    &:hover {
+        @include m.box-shadow-btn(rgb(177, 177, 177));
+    }
 }
 
 .fa-hover-show{

@@ -93,6 +93,9 @@ p {
 .restaurants-card__icon {
   font-size: 1.7em;
 }
+.restaurants-card:hover {
+  box-shadow: 0px 5px 8px rgb(177, 177, 177);
+}
 
 .fa-hover-show {
   color: var(--primary-color);
@@ -358,6 +361,7 @@ p {
 
 .how-container-cards__card:hover {
   background: #f2eafb;
+  box-shadow: 0px 5px 8px rgb(177, 177, 177);
 }
 
 .restaurants {

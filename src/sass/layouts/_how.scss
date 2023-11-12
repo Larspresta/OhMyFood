@@ -27,6 +27,7 @@
         position: relative;
         @include m.box-shadow-btn(var(--box-shadow-light));   
     }
+
 }
 
 .how-card-number {
@@ -49,4 +50,5 @@
 
 .how-container-cards__card:hover {
     background: lighten(#9356DC, 35%);
+    @include m.box-shadow-btn(rgb(177, 177, 177));
 }
